@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="YoutubeNoteContext-Web.config Connection String" description="YoutubeNoteContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=YoutubeNoteContext-20170615151641; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|YoutubeNoteContext-20170615151641.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\kachandn\\documents\\visual\ studio\ 2015\\Projects\\YoutubeNote\\YoutubeNote\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='YoutubeNoteContext']/@connectionString" />
+  </parameter>
+  <parameter name="YoutubeNoteContext_DatabasePublish-Web.config Connection String" description="YoutubeNoteContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="YoutubeNoteContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\kachandn\\documents\\visual\ studio\ 2015\\Projects\\YoutubeNote\\YoutubeNote\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='YoutubeNoteContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>
