@@ -64,3 +64,7 @@ c:\users\kachandn\documents\visual studio 2015\Projects\YoutubeNote\YoutubeNote\
 c:\users\kachandn\documents\visual studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.csproj.GenerateResource.Cache
 c:\users\kachandn\documents\visual studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.dll
 c:\users\kachandn\documents\visual studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.pdb
+C:\Users\kachandn\Documents\Visual Studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.csprojResolveAssemblyReference.cache
+C:\Users\kachandn\Documents\Visual Studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.Migrations.changed_user_table.resources
+C:\Users\kachandn\Documents\Visual Studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.Migrations.created_annotation_table.resources
+C:\Users\kachandn\Documents\Visual Studio 2015\Projects\YoutubeNote\YoutubeNote\obj\Debug\YoutubeNote.Migrations.created_annotation_table1.resources

@@ -167,6 +167,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AnnotationsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -184,7 +185,20 @@
     <Compile Include="Migrations\201706151538191_added_column_Title.Designer.cs">
       <DependentUpon>201706151538191_added_column_Title.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707241920242_changed_user_table.cs" />
+    <Compile Include="Migrations\201707241920242_changed_user_table.Designer.cs">
+      <DependentUpon>201707241920242_changed_user_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707241941468_created_annotation_table.cs" />
+    <Compile Include="Migrations\201707241941468_created_annotation_table.Designer.cs">
+      <DependentUpon>201707241941468_created_annotation_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707242041372_created_annotation_table1.cs" />
+    <Compile Include="Migrations\201707242041372_created_annotation_table1.Designer.cs">
+      <DependentUpon>201707242041372_created_annotation_table1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Annotations.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\YoutubeNoteContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -236,6 +250,11 @@
     <Content Include="Views\Home\Delete.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
+    <Content Include="Views\Annotations\Create.cshtml" />
+    <Content Include="Views\Annotations\Delete.cshtml" />
+    <Content Include="Views\Annotations\Details.cshtml" />
+    <Content Include="Views\Annotations\Edit.cshtml" />
+    <Content Include="Views\Annotations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,6 +279,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706151538191_added_column_Title.resx">
       <DependentUpon>201706151538191_added_column_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707241920242_changed_user_table.resx">
+      <DependentUpon>201707241920242_changed_user_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707241941468_created_annotation_table.resx">
+      <DependentUpon>201707241941468_created_annotation_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707242041372_created_annotation_table1.resx">
+      <DependentUpon>201707242041372_created_annotation_table1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

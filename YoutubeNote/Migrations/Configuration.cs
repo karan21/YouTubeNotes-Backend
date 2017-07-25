@@ -14,10 +14,11 @@ namespace YoutubeNote.Migrations
 
         protected override void Seed(YoutubeNote.Models.YoutubeNoteContext context)
         {
-            context.Users.AddOrUpdate(p => p.UsersId,
+            
+            /*context.Users.AddOrUpdate(p => p.UsersId,
                new Users
                {
-                   Name = "Karan",
+                   Email = "Karan",
                    Url = "url1",
                    TimeStamp = "05:00",
                    Note = "Note1",
@@ -26,7 +27,7 @@ namespace YoutubeNote.Migrations
                },
                new Users
                {
-                   Name = "Karan",
+                   Email = "Karan",
                    Url = "url1",
                    TimeStamp = "05:22",
                    Note = "Note2",
@@ -35,7 +36,7 @@ namespace YoutubeNote.Migrations
                },
                new Users
                {
-                   Name = "Karan",
+                   Email = "Karan",
                    Url = "url2",
                    TimeStamp = "05:00",
                    Note = "Note3",
@@ -44,14 +45,14 @@ namespace YoutubeNote.Migrations
                },
                new Users
                {
-                   Name = "Viplav",
+                   Email = "Viplav",
                    Url = "url1",
                    TimeStamp = "05:22",
                    Note = "Note4",
                    Title = "Title1"
 
                }
-                );
+                );*/
         }
     }
 }

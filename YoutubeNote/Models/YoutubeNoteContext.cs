@@ -20,5 +20,7 @@ namespace YoutubeNote.Models
         }
 
         public System.Data.Entity.DbSet<YoutubeNote.Models.Users> Users { get; set; }
+
+        public System.Data.Entity.DbSet<YoutubeNote.Models.Annotations> Annotations { get; set; }
     }
 }

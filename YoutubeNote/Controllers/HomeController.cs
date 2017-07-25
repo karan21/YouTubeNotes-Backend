@@ -46,7 +46,7 @@ namespace YoutubeNote.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UsersId,Name,Self")] Users users)
+        public ActionResult Create([Bind(Include = "UsersId,Email,Self")] Users users)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace YoutubeNote.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "UsersId,Name,Self")] Users users)
+        public ActionResult Edit([Bind(Include = "UsersId,Email,Self")] Users users)
         {
             if (ModelState.IsValid)
             {

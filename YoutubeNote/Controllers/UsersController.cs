@@ -45,7 +45,7 @@ namespace YoutubeNote.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != users.UsersId)
+            if (id != users.UserId)
             {
                 return BadRequest();
             }
@@ -84,7 +84,7 @@ namespace YoutubeNote.Controllers
             db.Users.Add(users);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = users.UsersId }, users);
+            return CreatedAtRoute("DefaultApi", new { id = users.UserId }, users);
         }
 
         // DELETE: api/Users/5
@@ -103,67 +103,67 @@ namespace YoutubeNote.Controllers
             return Ok(users);
         }
 
-        [System.Web.Http.HttpPost]
-        [System.Web.Http.Route("api/Users/GetNotes")]
-        public IHttpActionResult GetNotes(Users user)
-        {
-            // ...
-            var Name = user.Name;
-            var Url = user.Url;
-            var response = db.Users.Where(d => d.Name == Name && d.Url == Url);
-            return Ok(response);
+        //[System.Web.Http.HttpPost]
+        //[System.Web.Http.Route("api/Users/GetNotes")]
+        //public IHttpActionResult GetNotes(Users user)
+        //{
+        //    // ...
+        //    var Name = user.Email;
+        //    var Url = user.Url;
+        //    var response = db.Users.Where(d => d.Email == Name && d.Url == Url);
+        //    return Ok(response);
 
-        }
+        //}
 
-        [System.Web.Http.HttpPost]
-        [System.Web.Http.Route("api/Users/GetVideos")]
-        public IHttpActionResult GetVideos(Users user)
-        {
-            // ...
-            var Name = user.Name;
-            var response = db.Users.Where(d => d.Name == Name).Select(x => new
-            {
-                Title = x.Title,
-                Url = x.Url
-            }).Distinct();
-            return Ok(response);
+        //[System.Web.Http.HttpPost]
+        //[System.Web.Http.Route("api/Users/GetVideos")]
+        //public IHttpActionResult GetVideos(Users user)
+        //{
+        //    // ...
+        //    var Name = user.Email;
+        //    var response = db.Users.Where(d => d.Email == Name).Select(x => new
+        //    {
+        //        Title = x.Title,
+        //        Url = x.Url
+        //    }).Distinct();
+        //    return Ok(response);
 
-        }
+        //}
 
-        [System.Web.Http.HttpDelete]
-        [System.Web.Http.Route("api/Users/RemoveNote")]
-        public IHttpActionResult RemoveNote(Users user)
-        {
-            // ...
-            var Name = user.Name;
-            var Url = user.Url;
-            var TimeStamp = user.TimeStamp;
-            var response = db.Users.Where(d => d.Name == Name && d.Url == Url && d.TimeStamp == TimeStamp);
-            foreach(var user1 in response)
-            {
-                db.Users.Remove(user1);
-            }
-            db.SaveChanges();
-            return Ok(response);
+        //[System.Web.Http.HttpDelete]
+        //[System.Web.Http.Route("api/Users/RemoveNote")]
+        //public IHttpActionResult RemoveNote(Users user)
+        //{
+        //    // ...
+        //    var Name = user.Email;
+        //    var Url = user.Url;
+        //    var TimeStamp = user.TimeStamp;
+        //    var response = db.Users.Where(d => d.Email == Name && d.Url == Url && d.TimeStamp == TimeStamp);
+        //    foreach (var user1 in response)
+        //    {
+        //        db.Users.Remove(user1);
+        //    }
+        //    db.SaveChanges();
+        //    return Ok(response);
 
-        }
+        //}
 
-        [System.Web.Http.HttpDelete]
-        [System.Web.Http.Route("api/Users/RemoveVideo")]
-        public IHttpActionResult RemoveVideo(Users user)
-        {
-            // ...
-            var Name = user.Name;
-            var Url = user.Url;
-            var response = db.Users.Where(d => d.Name == Name && d.Url == Url);
-            foreach (var user1 in response)
-            {
-                db.Users.Remove(user1);
-            }
-            db.SaveChanges();
-            return Ok(response);
+        //[System.Web.Http.HttpDelete]
+        //[System.Web.Http.Route("api/Users/RemoveVideo")]
+        //public IHttpActionResult RemoveVideo(Users user)
+        //{
+        //    // ...
+        //    var Name = user.Email;
+        //    var Url = user.Url;
+        //    var response = db.Users.Where(d => d.Email == Name && d.Url == Url);
+        //    foreach (var user1 in response)
+        //    {
+        //        db.Users.Remove(user1);
+        //    }
+        //    db.SaveChanges();
+        //    return Ok(response);
 
-        }
+        //}
 
         protected override void Dispose(bool disposing)
         {
@@ -176,7 +176,7 @@ namespace YoutubeNote.Controllers
 
         private bool UsersExists(int id)
         {
-            return db.Users.Count(e => e.UsersId == id) > 0;
+            return db.Users.Count(e => e.UserId == id) > 0;
         }
     }
 }
